@@ -93,7 +93,7 @@ def main():
         'How many sides does a pentagon have?'
     ]
 
-    reader = DocumentReader('bert-large-uncased-whole-word-masking-finetuned-squad')
+    reader = DocumentReader('deepset/bert-base-cased-squad2')
 
     for question in questions:
         print(f"Question: {question}")
