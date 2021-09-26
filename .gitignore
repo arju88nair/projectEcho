@@ -2,3 +2,5 @@
 /speech/models/
 /speech/.idea/
 /env/
+/ego_virtualenv/
+/.idea/

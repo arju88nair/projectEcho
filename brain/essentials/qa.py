@@ -11,17 +11,17 @@ import textwrap
 def main():
     # Wrap text to 80 characters.
 
-    bert_abstract = "Macedonia was an ancient kingdom on the periphery of Archaic and Classical Greece and later the dominant state of Hellenistic Greece. The kingdom was founded and initially ruled by the Argead dynasty, followed by the Antipatrid and Antigonid dynasties. Home to the ancient Macedonians, it originated on the northeastern part of the Greek peninsula. Before the 4th century BC, it was a small kingdom outside of the area dominated by the city-states of Athens, Sparta and Thebes, and briefly subordinate to Achaemenid Persia"
+    bert_abstract = "Macedonia was an ancient kingdom on the periphery of Archaic and Classical Greece and later the dominant state of Hellenistic Greece. The kingdom was founded and initially ruled by the Argead dynasty, followed by the Antipatrid and Antigonid dynasties. Home to the ancient Macedonians, it originated on the northeastern part of the Greek peninsula. Before the 4th century BC, it was a small kingdom outside of the area dominated by the city-states of Athens, Sparta and Thebes, and briefly subordinate to Achaemenid Persia."
     question = "Who ruled Macedonia?"
-    # question = 'What is the wingspan of an albatross?'
+    question = 'What is the wingspan of an albatross?'
 
-    # results = wiki.search(question)
-    # print("Wikipedia search results for our question:\n")
-    #
-    # page = wiki.page(results[0])
-    # text = page.content
-    #
-    # print(text)
+    results = wiki.search(question)
+    print("Wikipedia search results for our question:\n")
+
+    page = wiki.page(results[0])
+    bert_abstract = page.content
+
+    print(bert_abstract)
 
     answer_question(question, bert_abstract)
 
@@ -33,7 +33,7 @@ def answer_question(question, answer_text):
     '''
     # ======== Tokenize ========
     # Apply the tokenizer to the input text, treating them as a text-pair.
-    input_ids = tokenizer.encode(question, answer_text)
+    input_ids = tokenizer.encode_plus(question, answer_text, add_special_tokens=True, return_tensors="pt")
 
     # Report how long the input sequence is.
     print('Query has {:,} tokens.\n'.format(len(input_ids)))
