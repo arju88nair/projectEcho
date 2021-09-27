@@ -130,4 +130,4 @@ fi
 # Finished
 #-----------------------------------
 echo "${green} Ego setup succeed! ${reset}"
-echo "Start Ego: bash run_ego.sh"
+echo "Start Ego: bash start_ego.sh"
