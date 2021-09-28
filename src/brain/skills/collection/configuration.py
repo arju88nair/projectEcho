@@ -53,5 +53,5 @@ class ConfigurationSkills(AssistantSkill):
             db.update_collection(collection=MongoCollections.GENERAL_SETTINGS.value, documents=[new_settings])
 
             import brain
-            importlib.reload(jarvis)
+            importlib.reload(brain)
 

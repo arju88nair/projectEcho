@@ -45,7 +45,7 @@ class AssistantSkill:
         This method identifies the tags from the user transcript for a specific skill.
 
         e.x
-        Let's that the user says "hi jarvis!".
+        Let's that the user says "hi ego!".
         The skill analyzer will match it with enable_assistant skill which has tags 'hi, hello ..'
         This method will identify the that the enabled word was the 'hi' not the hello.
 

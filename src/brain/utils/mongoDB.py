@@ -11,7 +11,7 @@ class MongoDB:
 
     def __init__(self, host='localhost', port=27017):
         self.client = MongoClient(host, port)
-        self.database = self.client['jarvis']
+        self.database = self.client['ego']
 
     def get_documents(self, collection, key=None, limit=None):
         collection_obj = self.database[collection]

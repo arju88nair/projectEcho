@@ -47,7 +47,7 @@ Keys Description:
 
 
 DEFAULT_GENERAL_SETTINGS = {
-    'assistant_name': 'Jarvis',
+    'assistant_name': 'Ego',
     'input_mode': InputMode.TEXT.value,
     'response_in_speech': False,
 }
