@@ -24,10 +24,10 @@ import re
 
 from pyowm import OWM
 
-from jarvis.settings import WEATHER_API
-from jarvis.skills.collection.location import LocationSkill
-from jarvis.skills.collection.internet import InternetSkills
-from jarvis.skills.skill import AssistantSkill
+from brain.settings import WEATHER_API
+from brain.skills.collection.location import LocationSkill
+from brain.skills.collection.internet import InternetSkills
+from brain.skills.skill import AssistantSkill
 
 
 class WeatherSkills(AssistantSkill):

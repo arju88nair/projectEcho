@@ -22,7 +22,7 @@
 
 import subprocess
 
-from jarvis.skills.skill import AssistantSkill
+from brain.skills.skill import AssistantSkill
 import brain
 
 
@@ -52,7 +52,7 @@ class UtilSkills(AssistantSkill):
         """
         Stop assistant speech.
         """
-        jarvis.output_engine.stop_speaking = True
+        brain.output_engine.stop_speaking = True
 
     @classmethod
     def clear_console(cls, **kwargs):

@@ -24,8 +24,8 @@ import requests
 import logging
 import speedtest
 
-from jarvis.skills.skill import AssistantSkill
-from jarvis.utils.startup import internet_connectivity_check
+from brain.skills.skill import AssistantSkill
+from brain.utils.startup import internet_connectivity_check
 
 
 class InternetSkills(AssistantSkill):

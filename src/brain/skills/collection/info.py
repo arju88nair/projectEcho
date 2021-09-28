@@ -20,9 +20,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from jarvis.skills.skill import AssistantSkill
-from jarvis.utils.mongoDB import db
-from jarvis.utils.console import headerize
+from brain.skills.skill import AssistantSkill
+from brain.utils.mongoDB import db
+from brain.utils.console import headerize
 
 basic_skills_format = """
 -----------------------------------------------------------------------

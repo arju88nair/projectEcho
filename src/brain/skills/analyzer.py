@@ -20,8 +20,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 import logging
-from jarvis.utils.mapping import math_symbols_mapping
-from jarvis.utils.mongoDB import db
+from brain.utils.mapping import math_symbols_mapping
+from brain.utils.mongoDB import db
 
 
 class SkillAnalyzer:

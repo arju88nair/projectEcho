@@ -22,8 +22,8 @@
 
 from word2number import w2n
 
-from jarvis.skills.skill import AssistantSkill
-from jarvis.utils.mapping import math_symbols_mapping
+from brain.skills.skill import AssistantSkill
+from brain.utils.mapping import math_symbols_mapping
 
 
 class MathSkills(AssistantSkill):

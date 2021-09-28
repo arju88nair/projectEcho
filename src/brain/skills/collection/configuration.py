@@ -22,12 +22,12 @@
 import importlib
 
 
-from jarvis.skills.skill import AssistantSkill
-from jarvis import settings
-from jarvis.utils.mongoDB import db
-from jarvis.enumerations import InputMode, MongoCollections
-from jarvis.utils import console
-from jarvis.utils import input
+from brain.skills.skill import AssistantSkill
+from brain import settings
+from brain.utils.mongoDB import db
+from brain.enumerations import InputMode, MongoCollections
+from brain.utils import console
+from brain.utils import input
 
 input_mode = db.get_documents(collection='general_settings')[0]['input_mode']
 response_in_speech = db.get_documents(collection='general_settings')[0]['response_in_speech']

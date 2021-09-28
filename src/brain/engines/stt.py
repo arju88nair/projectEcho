@@ -24,7 +24,7 @@ import logging
 import speech_recognition as sr
 
 import brain
-from jarvis.core.console import ConsoleManager
+from brain.core.console import ConsoleManager
 
 
 class STTEngine:
@@ -86,11 +86,11 @@ class STTEngine:
 
         if transcript:
             transcript_words = transcript.split()
-            return bool(set(transcript_words).intersection([jarvis.assistant_name]))
+            return bool(set(transcript_words).intersection([brain.assistant_name]))
         else:
             return False
 
     @staticmethod
     def _remove_activation_word(transcript):
-        transcript = transcript.replace(jarvis.assistant_name, '')
+        transcript = transcript.replace(brain.assistant_name, '')
         return transcript

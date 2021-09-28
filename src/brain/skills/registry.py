@@ -20,24 +20,24 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from jarvis.skills.collection.activation import ActivationSkills
-from jarvis.skills.collection.info import AssistantInfoSkills
-from jarvis.skills.collection.datetime import DatetimeSkills
-from jarvis.skills.collection.browser import BrowserSkills
-from jarvis.skills.collection.general import UtilSkills
-from jarvis.skills.collection.internet import InternetSkills
-from jarvis.skills.collection.libreoffice import LibreofficeSkills
-from jarvis.skills.collection.linux import LinuxAppSkills
-from jarvis.skills.collection.location import LocationSkill
-from jarvis.skills.collection.reminder import ReminderSkills
-from jarvis.skills.collection.system_health import SystemHealthSkills
-from jarvis.skills.collection.weather import WeatherSkills
-from jarvis.skills.collection.text import WordSkills
-from jarvis.skills.collection.history import HistorySkills
-from jarvis.skills.collection.remember import RememberSkills
-from jarvis.skills.collection.math import MathSkills
-from jarvis.utils.mapping import math_tags
-from jarvis.skills.collection.configuration import ConfigurationSkills
+from brain.skills.collection.activation import ActivationSkills
+from brain.skills.collection.info import AssistantInfoSkills
+from brain.skills.collection.datetime import DatetimeSkills
+from brain.skills.collection.browser import BrowserSkills
+from brain.skills.collection.general import UtilSkills
+from brain.skills.collection.internet import InternetSkills
+from brain.skills.collection.libreoffice import LibreofficeSkills
+from brain.skills.collection.linux import LinuxAppSkills
+from brain.skills.collection.location import LocationSkill
+from brain.skills.collection.reminder import ReminderSkills
+from brain.skills.collection.system_health import SystemHealthSkills
+from brain.skills.collection.weather import WeatherSkills
+from brain.skills.collection.text import WordSkills
+from brain.skills.collection.history import HistorySkills
+from brain.skills.collection.remember import RememberSkills
+from brain.skills.collection.math import MathSkills
+from brain.utils.mapping import math_tags
+from brain.skills.collection.configuration import ConfigurationSkills
 
 # All available assistant skills
 # Keys description:

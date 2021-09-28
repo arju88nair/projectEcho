@@ -29,9 +29,9 @@ from threading import Thread
 from playsound import playsound
 from apscheduler.schedulers.background import BackgroundScheduler
 
-from jarvis.utils.input import validate_digits_input
-from jarvis.skills.skill import AssistantSkill
-from jarvis.utils.console import OutputStyler
+from brain.utils.input import validate_digits_input
+from brain.skills.skill import AssistantSkill
+from brain.utils.console import OutputStyler
 
 time_intervals = {
     'seconds': {'variations': ['sec', 'second', 'seconds'],

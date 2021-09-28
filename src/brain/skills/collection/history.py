@@ -22,8 +22,8 @@
 
 import re
 
-from jarvis.skills.skill import AssistantSkill
-from jarvis.utils.mongoDB import db
+from brain.skills.skill import AssistantSkill
+from brain.utils.mongoDB import db
 
 header = """
 -----------------------------------------------------------------------------------------------
@@ -69,7 +69,7 @@ class HistorySkills(AssistantSkill):
         except Exception as e:
             cls.console(error_log=e)
         finally:
-            from jarvis.utils import input, console
+            from brain.utils import input, console
             return header + response
 
     @classmethod

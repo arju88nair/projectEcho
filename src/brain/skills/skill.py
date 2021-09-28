@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from jarvis.core.console import ConsoleManager
+from brain.core.console import ConsoleManager
 import brain
 
 
@@ -52,11 +52,11 @@ class AssistantSkill:
             - TTT Engine: The response is only in text
             - TTS Engine: The response is in voice and text
         """
-        jarvis.output_engine.assistant_response(text, refresh_console=refresh_console)
+        brain.output_engine.assistant_response(text, refresh_console=refresh_console)
 
     @classmethod
     def user_input(cls):
-        user_input = jarvis.input_engine.recognize_input(already_activated=True)
+        user_input = brain.input_engine.recognize_input(already_activated=True)
         return user_input
 
     @classmethod

@@ -25,12 +25,12 @@ import brain
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-from jarvis.skills.analyzer import SkillAnalyzer
-from jarvis.skills.registry import skill_objects
-from jarvis.core.nlp import ResponseCreator
-from jarvis.skills.collection.activation import ActivationSkills
-from jarvis.utils.mongoDB import db
-from jarvis.skills.collection.wolframalpha import WolframSkills
+from brain.skills.analyzer import SkillAnalyzer
+from brain.skills.registry import skill_objects
+from brain.core.nlp import ResponseCreator
+from brain.skills.collection.activation import ActivationSkills
+from brain.utils.mongoDB import db
+from brain.skills.collection.wolframalpha import WolframSkills
 
 
 class Processor:
@@ -57,7 +57,7 @@ class Processor:
 
         """
 
-        transcript = jarvis.input_engine.recognize_input()
+        transcript = brain.input_engine.recognize_input()
         skill = self.skill_analyzer.extract(transcript)
 
         if skill:
@@ -69,7 +69,7 @@ class Processor:
             # Positive answer
             # ---------------
             response = self.response_creator.create_positive_response(transcript)
-            jarvis.output_engine.assistant_response(response)
+            brain.output_engine.assistant_response(response)
 
             # ---------------
             # Skill execution
@@ -86,7 +86,7 @@ class Processor:
             # Negative answer
             # ---------------
             response = self.response_creator.create_negative_response(transcript)
-            jarvis.output_engine.assistant_response(response)
+            brain.output_engine.assistant_response(response)
 
             # ---------------
             # WolframAlpha API Call
