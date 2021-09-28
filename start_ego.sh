@@ -7,7 +7,7 @@ sudo service mongod start
 # --------------------------------
 # Start Ego service with virtualenv
 # --------------------------------
-./ego_virtualenv/bin/python ./brain/jarvis/start.py
+./ego_virtualenv/bin/python ./src/start.py
 
 # --------------------------------
 # Stop MongoDB service
