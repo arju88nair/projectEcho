@@ -16,6 +16,7 @@ from brain.skills.collection.text import WordSkills
 from brain.skills.collection.history import HistorySkills
 from brain.skills.collection.remember import RememberSkills
 from brain.skills.collection.math import MathSkills
+from brain.skills.collection.notes import NoteSkill
 from brain.utils.mapping import math_tags
 from brain.skills.collection.configuration import ConfigurationSkills
 
@@ -286,6 +287,13 @@ BASIC_SKILLS = [
         'func': UtilSkills.max_master_volume,
         'tags': 'volume max',
         'description': 'Set max the speakers master volume'
+    },
+
+    {
+        'enable': True,
+        'func': NoteSkill.blah,
+        'tags': 'create note',
+        'description': 'Add everything'
     },
 
 ]
